@@ -1,0 +1,26 @@
+﻿<body onload="Greeting()">
+
+    @{
+        ViewBag.Title = "Home Page";
+    }
+
+    <div class="row">
+        <div class="col-4 square bg text" id="choice">
+            <div class="col title" id="greeting1">
+                <h1 onmouseover="myFunction()" onmouseout="myFunction2()" class="homepage"> Welcome To My Wardrobe</h1>
+                <input id="buttonloc" type="submit" value="Feedback" onmouseover="overBtn(this)" onmouseout="outBtn(this)" onclick="Feedback(); Swap('choice', 'choice2');">
+
+            </div>
+
+        </div>
+
+
+        <div class="col-4 square bg text" id="choice2" style="display:none">
+            <div class="content">
+                <p class="lochead">FeedBack</p>
+                <p class="locp" id="villout"></p>
+                <input id="buttonloc" type="submit" value="Return" onmouseover="overBtn(this)" onmouseout="outBtn(this)" onclick="Swap('choice', 'choice2');">
+            </div>
+        </div>
+    </div>
+</body>
